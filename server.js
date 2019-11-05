@@ -14,7 +14,7 @@ server.use(express.json())
 server.use("/cars", logger, carRouter);
 
 server.get("/", logger, (req, res) => {
-    res.send(`<h2>Let's write some middleware!</h2>`);
+    res.send(`<h2>go to /cars to hit actual endpoints! </h2>`);
   });
 
 
